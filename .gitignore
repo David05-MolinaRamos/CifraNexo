@@ -1,0 +1,70 @@
+# CifraNexo: archivos locales/sensibles. Nunca publicar secretos reales.
+# Python, entornos virtuales, cache, IDE y sistema operativo
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Variables y credenciales locales
+.env
+.env.*
+!.env.example
+*.local
+*.secret
+*.secrets
+*.p12
+*.pfx
+*.p8
+*.key
+*.pem
+*.srl
+*.csr
+
+# Datos de usuario, sesiones, almacenamiento cifrado y respaldos
+/base_de_datos/*
+!/base_de_datos/schema.sql
+!/base_de_datos/.gitkeep
+/productos/*
+!/productos/.gitkeep
+/respaldos/*
+!/respaldos/.gitkeep
+/buzon/*
+!/buzon/.gitkeep
+/logs/*
+!/logs/.gitkeep
+/secretos/*
+!/secretos/.gitkeep
+
+# CA, certificados y claves generadas en cada instalación
+/certificados/*
+!/certificados/.gitkeep
+/claves_publicas/*
+!/claves_publicas/.gitkeep
+
+# Evidencias reales y capturas: revisar/redactar antes de publicar
+/evidencias/reporte_pruebas.md
+/evidencias/artefactos/*
+!/evidencias/artefactos/.gitkeep
+/evidencias/capturas/*
+!/evidencias/capturas/.gitkeep
+
+# Archivos temporales de la aplicación
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.log
+*.bak
+*.backup
+*.tmp
